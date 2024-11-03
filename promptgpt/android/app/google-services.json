@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "489591589895",
+    "project_id": "promptgpt-26259",
+    "storage_bucket": "promptgpt-26259.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489591589895:android:b91f27f4cc511a6def6ea2",
+        "android_client_info": {
+          "package_name": "com.example.promptgpt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPysl6szxJC32DZCzrqiEwUnDqdJ7HUDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489591589895:android:e46a8b40f6c8865def6ea2",
+        "android_client_info": {
+          "package_name": "com.flutter.promptgpt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPysl6szxJC32DZCzrqiEwUnDqdJ7HUDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

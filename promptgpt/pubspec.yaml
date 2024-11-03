@@ -1,0 +1,39 @@
+name: promptgpt
+description: "A new Flutter project."
+
+publish_to: 'none'  # Do not publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"  # Specify SDK version range for compatibility
+
+dependencies:
+  http: ^0.13.4
+  cloud_firestore: ^5.0.0
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  dash_chat_2: ^0.0.21
+  chat_gpt_sdk: ^3.1.2
+  google_fonts: ^4.0.3
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/images/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "lib/images/applogotwo.png"         # Path to your full-size icon image
+  android_adaptive_icon: false          # Disable adaptive icons for full-image icons
+  adaptive_icon_background: "#000000"   # Background color for adaptive icons (not used here)

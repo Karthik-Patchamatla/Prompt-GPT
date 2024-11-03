@@ -1,0 +1,51 @@
+plugins {
+    id "com.android.application"
+    id "com.google.gms.google-services"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+dependencies {
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:33.5.1')
+    
+    // Add Firebase products you want to use without specifying versions
+    // Example: implementation 'com.google.firebase:firebase-analytics'
+}
+
+android {
+    namespace = "com.example.promptgpt"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.promptgpt"
+        minSdk = 23  // Updated to meet Firebase requirements
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
