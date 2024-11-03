@@ -41,47 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBY3OojprNgzVZsT-OohnmFZ4SxeVfAFFw',
-    appId: '1:489591589895:web:e0596b394b4dfff6ef6ea2',
-    messagingSenderId: '489591589895',
-    projectId: 'promptgpt-26259',
-    authDomain: 'promptgpt-26259.firebaseapp.com',
-    storageBucket: 'promptgpt-26259.firebasestorage.app',
+    apiKey: 'AIzaSyBQwLqow23lQoeNHqnoZvHMvuk8_mhoIjE',
+    appId: '1:573562833379:web:f89fc12ebaa57d64a838d6',
+    messagingSenderId: '573562833379',
+    projectId: 'promptgpt-4092e',
+    authDomain: 'promptgpt-4092e.firebaseapp.com',
+    storageBucket: 'promptgpt-4092e.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAPysl6szxJC32DZCzrqiEwUnDqdJ7HUDM',
-    appId: '1:489591589895:android:b91f27f4cc511a6def6ea2',
-    messagingSenderId: '489591589895',
-    projectId: 'promptgpt-26259',
-    storageBucket: 'promptgpt-26259.firebasestorage.app',
+    apiKey: 'AIzaSyBYeZJrehQ-_lasrORPqU4ux1_t4XQ-7xQ',
+    appId: '1:573562833379:android:9c7541fdf83bf0cfa838d6',
+    messagingSenderId: '573562833379',
+    projectId: 'promptgpt-4092e',
+    storageBucket: 'promptgpt-4092e.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB5C0RGSeJAIVoo-q1VWB9l3pZt3VadJME',
-    appId: '1:489591589895:ios:7a4fdc67100da5f3ef6ea2',
-    messagingSenderId: '489591589895',
-    projectId: 'promptgpt-26259',
-    storageBucket: 'promptgpt-26259.firebasestorage.app',
+    apiKey: 'AIzaSyDuZUgwpL0J0BZKLQNdonjq1P2r6D1Orx4',
+    appId: '1:573562833379:ios:c31adeafd064fc85a838d6',
+    messagingSenderId: '573562833379',
+    projectId: 'promptgpt-4092e',
+    storageBucket: 'promptgpt-4092e.firebasestorage.app',
     iosBundleId: 'com.example.promptgpt',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB5C0RGSeJAIVoo-q1VWB9l3pZt3VadJME',
-    appId: '1:489591589895:ios:7a4fdc67100da5f3ef6ea2',
-    messagingSenderId: '489591589895',
-    projectId: 'promptgpt-26259',
-    storageBucket: 'promptgpt-26259.firebasestorage.app',
+    apiKey: 'AIzaSyDuZUgwpL0J0BZKLQNdonjq1P2r6D1Orx4',
+    appId: '1:573562833379:ios:c31adeafd064fc85a838d6',
+    messagingSenderId: '573562833379',
+    projectId: 'promptgpt-4092e',
+    storageBucket: 'promptgpt-4092e.firebasestorage.app',
     iosBundleId: 'com.example.promptgpt',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBY3OojprNgzVZsT-OohnmFZ4SxeVfAFFw',
-    appId: '1:489591589895:web:d7fe75773bd8236fef6ea2',
-    messagingSenderId: '489591589895',
-    projectId: 'promptgpt-26259',
-    authDomain: 'promptgpt-26259.firebaseapp.com',
-    storageBucket: 'promptgpt-26259.firebasestorage.app',
+    apiKey: 'AIzaSyBQwLqow23lQoeNHqnoZvHMvuk8_mhoIjE',
+    appId: '1:573562833379:web:a6d444b3f96e4bf6a838d6',
+    messagingSenderId: '573562833379',
+    projectId: 'promptgpt-4092e',
+    authDomain: 'promptgpt-4092e.firebaseapp.com',
+    storageBucket: 'promptgpt-4092e.firebasestorage.app',
   );
-
 }

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "489591589895",
-    "project_id": "promptgpt-26259",
-    "storage_bucket": "promptgpt-26259.firebasestorage.app"
+    "project_number": "573562833379",
+    "project_id": "promptgpt-4092e",
+    "storage_bucket": "promptgpt-4092e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:489591589895:android:b91f27f4cc511a6def6ea2",
+        "mobilesdk_app_id": "1:573562833379:android:9c7541fdf83bf0cfa838d6",
         "android_client_info": {
           "package_name": "com.example.promptgpt"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAPysl6szxJC32DZCzrqiEwUnDqdJ7HUDM"
+          "current_key": "AIzaSyBYeZJrehQ-_lasrORPqU4ux1_t4XQ-7xQ"
         }
       ],
       "services": {
@@ -26,7 +26,7 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:489591589895:android:e46a8b40f6c8865def6ea2",
+        "mobilesdk_app_id": "1:573562833379:android:5157663b5fed1645a838d6",
         "android_client_info": {
           "package_name": "com.flutter.promptgpt"
         }
@@ -34,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAPysl6szxJC32DZCzrqiEwUnDqdJ7HUDM"
+          "current_key": "AIzaSyBYeZJrehQ-_lasrORPqU4ux1_t4XQ-7xQ"
         }
       ],
       "services": {

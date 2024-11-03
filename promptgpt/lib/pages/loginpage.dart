@@ -156,7 +156,7 @@ class _LoginFormState extends State<_LoginForm>
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ForgotPasswordPage(),
+                        builder: (context) => const ForgotPasswordPage(),
                       ),
                     );
                   },
