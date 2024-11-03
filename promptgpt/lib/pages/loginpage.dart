@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:promptgpt/components/my_button.dart';
 import 'package:promptgpt/components/textfield.dart';
+import 'package:promptgpt/pages/forgotpassword.dart';
 import 'package:promptgpt/pages/registerpage.dart';
 
 class LoginPage extends StatelessWidget {
@@ -58,7 +59,8 @@ class _LoginForm extends StatefulWidget {
   State<_LoginForm> createState() => _LoginFormState();
 }
 
-class _LoginFormState extends State<_LoginForm> with AutomaticKeepAliveClientMixin {
+class _LoginFormState extends State<_LoginForm>
+    with AutomaticKeepAliveClientMixin {
   String? errorMessage;
   bool isLoading = false;
 
@@ -84,23 +86,27 @@ class _LoginFormState extends State<_LoginForm> with AutomaticKeepAliveClientMix
     final password = widget.passwordController.text.trim();
 
     // Basic email validation
-    if (!RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$").hasMatch(email)) {
+    if (!RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+        .hasMatch(email)) {
       setState(() => errorMessage = "Please enter a valid email address.");
       return;
     }
 
     if (password.length < 6) {
-      setState(() => errorMessage = "Password must be at least 6 characters long.");
+      setState(
+          () => errorMessage = "Password must be at least 6 characters long.");
       return;
     }
 
     setState(() => isLoading = true);
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password);
+      await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: email, password: password);
       setState(() => errorMessage = null);
-      Navigator.pushReplacementNamed(context, '/home'); 
+      Navigator.pushReplacementNamed(context, '/home');
     } on FirebaseAuthException catch (e) {
-      setState(() => errorMessage = e.message ?? "An error occurred. Please try again.");
+      setState(() =>
+          errorMessage = e.message ?? "An error occurred. Please try again.");
     } finally {
       setState(() => isLoading = false);
     }
@@ -145,9 +151,19 @@ class _LoginFormState extends State<_LoginForm> with AutomaticKeepAliveClientMix
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Container(
                 margin: const EdgeInsets.only(right: 20.0),
-                child: const Text(
-                  "Forgot Password?",
-                  style: TextStyle(color: Colors.white),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ForgotPasswordPage(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Forgot Password?",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ),
             ),
@@ -161,7 +177,8 @@ class _LoginFormState extends State<_LoginForm> with AutomaticKeepAliveClientMix
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Don't have an Account? ", style: TextStyle(color: Colors.white)),
+            const Text("Don't have an Account? ",
+                style: TextStyle(color: Colors.white)),
             TextButton(
               onPressed: () {
                 Navigator.push(
