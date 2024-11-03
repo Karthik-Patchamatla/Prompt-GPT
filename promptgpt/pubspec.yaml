@@ -9,6 +9,7 @@ environment:
   sdk: ">=3.5.0 <4.0.0"  # Specify SDK version range for compatibility
 
 dependencies:
+  flutter_launcher_icons: ^0.14.1
   http: ^0.13.4
   cloud_firestore: ^5.0.0
   flutter:
@@ -21,7 +22,6 @@ dependencies:
   google_fonts: ^4.0.3
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
@@ -31,9 +31,10 @@ flutter:
   assets:
     - lib/images/
 
-flutter_icons:
+
+flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "lib/images/applogotwo.png"         # Path to your full-size icon image
-  android_adaptive_icon: false          # Disable adaptive icons for full-image icons
-  adaptive_icon_background: "#000000"   # Background color for adaptive icons (not used here)
+  image_path: "lib/images/applogo.png" # This is your main app icon
+  adaptive_icon_foreground: "lib/images/rpgptlogo.png" # Circular foreground image
+  adaptive_icon_background: "#000000"
