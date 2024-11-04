@@ -74,7 +74,7 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('lib/images/pgptlogo.png', height: 200.0),
+                Image.asset('lib/images/gptlogo.png', height: 200.0),
                 const SizedBox(height: 30.0),
                 const Text("Create an account", style: TextStyle(color: Colors.grey, fontSize: 16.0)),
                 const SizedBox(height: 20.0),

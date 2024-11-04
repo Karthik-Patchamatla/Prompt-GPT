@@ -37,5 +37,5 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: "lib/images/applogo.png" # This is your main app icon
-  adaptive_icon_foreground: "lib/images/rpgptlogo.png" # Circular foreground image
-  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "lib/images/applogo.png" # Circular foreground image
+  adaptive_icon_background: "#ffffff"

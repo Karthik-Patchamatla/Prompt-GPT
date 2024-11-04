@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('lib/images/pgptlogo.png', height: 200.0),
+                Image.asset('lib/images/gptlogologo.png', height: 200.0),
                 const SizedBox(height: 30.0),
                 const Text(
                   "Welcome back, you've been missed",

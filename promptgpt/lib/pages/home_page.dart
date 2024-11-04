@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'lib/images/rpgptlogo.png',
+              'lib/images/homelogo.png',
               height: 80,
             ),
             const SizedBox(height: 20),
