@@ -20,6 +20,7 @@ dependencies:
   dash_chat_2: ^0.0.21
   chat_gpt_sdk: ^3.1.2
   google_fonts: ^4.0.3
+  image_picker: ^0.8.4+4
 
 dev_dependencies:
   flutter_test:
